@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block body_class %}book-home{% endblock %}
+
+{% block heading %}
+    Book's Page
+{% endblock %}
+
+{% block body %}
+    {% if error %}
+        <p> {{ error }} </p>
+    {% endif %}
+    <table class="Books">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th class="rating">Rating</th>
+            <th class="reviews">Reviews</th>
+        </tr>
+    {% for book in books %}
+        <tr>
+            <td class="title"> <a href="/book_reviews/{{book.id}}">{{ book.title }}</a> </td>
+            <td class="author"> {{ book.author }} </td>
+            <td class="rating"> {{ bookRatingsAverage(book) }} </td>
+            <td class="reviews"> {{ bookRatingsTotal(book) }} </td>
+        </tr>
+    {% endfor %}
+    </table>
+
+    {% if current_user.is_authenticated %}
+    <form action="{{ url_for('addBook') }}" method="post">
+        <input type="text" name="title" placeholder="Book Title">
+        <input type="text" name="author" placeholder="Book Author">
+        <button>Add Book</button>
+    </form>
+    {% else %}
+    <p> Log in to add a book </p>
+    {% endif %}
+{% endblock %}

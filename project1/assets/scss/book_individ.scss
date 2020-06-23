@@ -1,0 +1,43 @@
+.book-individ {
+    h1 {
+        margin-bottom: 5px;
+    }
+    h3 {
+        margin-top: 5px;
+    }
+
+    .rating {
+        &.rounded-0 {
+            color: #9c9c9c;
+        }
+        &.rounded-1 {
+            color: #f51b1b;
+        }
+        &.rounded-2 {
+            color: #f5b245;
+        }
+        &.rounded-3 {
+            color: #f5ec45;
+        }
+        &.rounded-4 {
+            color: #aae649;
+        }
+        &.rounded-5 {
+            color: #13d426;
+        }
+    }
+
+    .rating-info {
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 60px;
+
+        form {
+            margin-top: 30px;
+        }
+    }
+
+    .return-container {
+        text-align: center;
+    }
+}

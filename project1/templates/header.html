@@ -1,0 +1,14 @@
+<div class="site-name">
+    <a class="home" href="/home"> Ryan's Wonderful Website </a>
+</div>
+<div class="site-items">
+    <a class="books" href="/book_reviews"> Book Reviews </a>
+</div>
+<div class="user-info">
+    {% if current_user.is_authenticated %}
+        <p class="username"> {{ current_user.username }} </p>
+        <a class="logout"href="{{ url_for('logout') }}"> Logout </a>
+    {% else %}
+        <a class="login" href="/"> Login </a>
+    {% endif %}
+</div>

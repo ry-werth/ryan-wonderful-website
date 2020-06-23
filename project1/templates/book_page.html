@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block body_class %} book-individ {% endblock %}
+
+{% block heading %}
+    {{ book.title }}
+{% endblock %}
+
+{% block subheader %}
+    {{ book.author }}
+{% endblock %}
+
+
+{% block body %}
+    <div class="rating-info">
+        {% if ratings_average %}
+            <h3> This book has a <span class="rating rounded-{{ ratings_average|round|int }}">{{ ratings_average }}</span> rating from {{ ratings_count }} reviews</h3>
+        {% else %}
+            <h3> This book has not been reviewed yet :(</h3>
+        {% endif %}
+
+        {% if current_user.is_authenticated %}
+            {% if user_rating %}
+                <p> You gave this book a {{ user_rating }} </p>
+            {% else %}
+                <form action="/book/{{ book.id }}/rating" method="post">
+                    <select name="rating">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button>Add Rating</button>
+                </form>
+            {% endif %}
+        {% else %}
+        <p> Log in to rate this book </p>
+        {% endif %}
+    </div>
+
+    <div class="return-container">
+        <a href="/book_reviews">Back to Books</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block heading %}
+    Create Account
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('signup') }}" method="post">
+        <input type="text" name="username" placeholder="Create Your UserName">
+        <input type="password" name="password" placeholder="Enter A Password">
+        <button>Sign Up</button>
+    </form>
+{% endblock %}

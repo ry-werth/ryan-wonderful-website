@@ -1,0 +1,31 @@
+.site-header {
+  width: 100%;
+  height: 50px;
+  background: #80aaff;
+  display: flex; }
+  .site-header a {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; }
+    .site-header .site-name {
+      width: 15%;
+      text-align: right; }
+      .site-header .site-name .home {
+        text-decoration: none;
+        color: black; }
+  .site-header .site-items {
+    width: 70%;
+    text-align: right; }
+    .site-header .user-info {
+      width: 15%; }
+      .site-header .user-info .username {
+        width: 55%;
+        float: left;
+        text-align: right; }
+        .site-header .user-info .logout {
+          width: 30%;
+          float: right; }
+          .site-header .user-info .login {
+            text-align: center; }

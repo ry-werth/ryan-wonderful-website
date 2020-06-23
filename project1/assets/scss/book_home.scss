@@ -1,0 +1,46 @@
+.book-home {
+    table {
+        margin: 0 auto;
+        width: 50%;
+        tr {
+            th {
+                text-align: left;
+                &.rating, &.reviews {
+                    text-align: center;
+                }
+            }
+            td {
+                &.title, &.author  {
+                    width: 35%;
+                }
+                &.rating, &.reviews {
+                    text-align: center;
+                    width: 15%;
+                }
+
+            }
+        }
+    }
+
+    form {
+        margin: 50px auto 0;
+        text-align: center;
+        input {
+            margin-right: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border-width: 1px;
+            border-style: solid;
+        }
+        button {
+            background-color: #DE4A67;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            &:hover {
+                cursor: pointer;
+                background-color: #c43753;
+            }
+        }
+    }
+}

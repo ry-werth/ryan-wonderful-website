@@ -12,6 +12,9 @@ from flask_assets import Environment, Bundle
 from flask_scss import Scss
 
 app = Flask(__name__)
+app.config.from_object(os.environ['APP_SETTINGS'])
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db=SQLAlchemy(app)
 
 # Check for environment variable
 if not os.getenv("DATABASE_URL"):
@@ -25,8 +28,6 @@ Session(app)
 engine = create_engine(os.getenv("DATABASE_URL"))
 db_session = scoped_session(sessionmaker(bind=engine))
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///site.db'
-db=SQLAlchemy(app)
-migrate = Migrate(app, db)
 bcrypt=Bcrypt(app)
 login_manager = LoginManager(app)
 Scss(app)

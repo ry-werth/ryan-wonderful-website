@@ -1,23 +1,64 @@
 .site-body {
     margin: 0;
-    background-color: #c1d9de;
+    background-color: white;
+    p, h1, h2, h3, h4, h5, div, a {
+        // font-family: 'Roboto', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .light-blue-text {
+        color: #17C3B2;
+    }
+
+    .orange-text {
+        color: #FFCB77
+    }
+
+    .dark-blue {
+        background-color: #227C9D;
+    }
+
+    .light-blue {
+        background-color: #17C3B2;
+    }
+
+    .orange {
+        background-color: #FFCB77;
+    }
 
     .site-header {
+    }
 
+    .flex {
+        display: flex;
     }
 
     .site-content {
         max-width: 1340px;
         margin: 0 auto;
-        background-color: white;
-        padding-top: 30px;
         padding-bottom: 100px;
+        .page-header-container {
+            padding: 20px 0;
+            .page-heading {
+                text-align: center;
+                font-size: 60px;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
 
-        .page-heading {
-            text-align: center;
-        }
-        .page-subheader {
-            text-align: center;
+            }
+            .page-subheader {
+                text-align: center;
+            }
         }
     }
 }

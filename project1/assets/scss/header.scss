@@ -1,21 +1,24 @@
 .site-header {
     width: 100%;
     height: 50px;
-    background: #80aaff;
     display: flex;
     a {
         display: block;
-        margin-block-start: 1em;
+        margin-block-start: .8em;
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
+        color: #FFCB77;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
     }
     .site-name {
         width: 15%;
         text-align: right;
         .home {
             text-decoration: none;
-            color: black;
         }
     }
     .site-items {

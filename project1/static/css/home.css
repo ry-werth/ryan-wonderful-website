@@ -1,9 +1,16 @@
-.home .about-wrapper {
-  padding-top: 50px; }
-  .home .about-wrapper .about-header {
-    text-align: center; }
-    .home .about-wrapper .about-content {
-      width: 600px;
-      margin: 0 auto;
-      text-align: left;
-      padding-bottom: 40px; }
+.home .about-wrapper .contact {
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 40px; }
+  .home .about-wrapper .contact a:hover {
+    transform: scale(1.2); }
+.home .about-wrapper .about-header {
+  text-align: center; }
+  .home .about-wrapper .about-content {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px; }

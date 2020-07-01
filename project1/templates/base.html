@@ -7,14 +7,20 @@
         <link rel=stylesheet type=text/css href="../static/css/book_individ.css">
         <link rel=stylesheet type=text/css href="../static/css/header.css">
         <link rel=stylesheet type=text/css href="../static/css/home.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
+    <style>
+    </style>
     <body class="site-body {% block body_class %}{% endblock %}">
-        <div class="site-header">
+        <div class="site-header dark-blue orange-text">
             {% include 'header.html' %}
         </div>
         <div class="site-content">
-            <h1 class="page-heading">{% block heading %}{% endblock %}</h1>
-            <h3 class="page-subheader">{% block subheader %}{% endblock %}</h3>
+            <div class="page-header-container">
+                <h1 class="page-heading light-blue-text">{% block heading %}{% endblock %}</h1>
+                <h3 class="page-subheader light-blue-text">{% block subheader %}{% endblock %}</h3>
+            </div>
 
             {% block body %}
             {% endblock %}

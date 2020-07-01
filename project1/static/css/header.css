@@ -1,20 +1,22 @@
 .site-header {
   width: 100%;
   height: 50px;
-  background: #80aaff;
   display: flex; }
   .site-header a {
     display: block;
-    margin-block-start: 1em;
+    margin-block-start: 0.8em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px; }
-    .site-header .site-name {
-      width: 15%;
-      text-align: right; }
-      .site-header .site-name .home {
-        text-decoration: none;
-        color: black; }
+    margin-inline-end: 0px;
+    color: #FFCB77;
+    text-decoration: none; }
+    .site-header a:hover {
+      color: white; }
+  .site-header .site-name {
+    width: 15%;
+    text-align: right; }
+    .site-header .site-name .home {
+      text-decoration: none; }
   .site-header .site-items {
     width: 70%;
     text-align: right; }

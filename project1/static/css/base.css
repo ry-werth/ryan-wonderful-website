@@ -4,33 +4,30 @@
   .site-body p, .site-body h1, .site-body h2, .site-body h3, .site-body h4,
   .site-body h5, .site-body div, .site-body a {
     font-family: 'Open Sans', sans-serif; }
-    .site-body a:visited {
-      text-decoration: none;
-      color: inherit; }
-      .site-body a {
-        text-decoration: none; }
-        .site-body .light-blue-text {
-          color: #17C3B2; }
-          .site-body .orange-text {
-            color: #FFCB77; }
-            .site-body .dark-blue {
-              background-color: #227C9D; }
-              .site-body .light-blue {
-                background-color: #17C3B2; }
-                .site-body .orange {
-                  background-color: #FFCB77; }
-                  .site-body .flex {
-                    display: flex; }
-                    .site-body .site-content {
-                      max-width: 1340px;
-                      margin: 0 auto;
-                      padding-bottom: 100px; }
-                      .site-body .site-content .page-header-container {
-                        padding: 20px 0; }
-                        .site-body .site-content .page-header-container .page-heading {
-                          text-align: center;
-                          font-size: 60px;
-                          letter-spacing: 2px;
-                          margin-bottom: 10px; }
-                          .site-body .site-content .page-header-container .page-subheader {
-                            text-align: center; }
+    .site-body a {
+      text-decoration: none; }
+      .site-body .light-blue-text {
+        color: #17C3B2; }
+        .site-body .orange-text {
+          color: #FFCB77; }
+          .site-body .dark-blue {
+            background-color: #227C9D; }
+            .site-body .light-blue {
+              background-color: #17C3B2; }
+              .site-body .orange {
+                background-color: #FFCB77; }
+                .site-body .flex {
+                  display: flex; }
+                  .site-body .site-content {
+                    max-width: 1340px;
+                    margin: 0 auto;
+                    padding-bottom: 100px; }
+                    .site-body .site-content .page-header-container {
+                      padding: 20px 0; }
+                      .site-body .site-content .page-header-container .page-heading {
+                        text-align: center;
+                        font-size: 60px;
+                        letter-spacing: 2px;
+                        margin-bottom: 10px; }
+                        .site-body .site-content .page-header-container .page-subheader {
+                          text-align: center; }

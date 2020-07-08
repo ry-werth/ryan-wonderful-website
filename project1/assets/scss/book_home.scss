@@ -2,6 +2,11 @@
     table {
         margin: 0 auto;
         width: 50%;
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
         tr {
             th {
                 text-align: left;
@@ -33,14 +38,17 @@
             border-style: solid;
         }
         button {
-            background-color: #DE4A67;
             padding: 10px;
             border-radius: 5px;
             font-size: 16px;
             &:hover {
                 cursor: pointer;
-                background-color: #c43753;
             }
         }
+    }
+
+    .log-in-notice {
+        text-align: center;
+        margin-top: 50px;
     }
 }

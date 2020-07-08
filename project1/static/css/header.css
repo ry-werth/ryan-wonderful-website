@@ -25,7 +25,8 @@
       .site-header .user-info .username {
         width: 55%;
         float: left;
-        text-align: right; }
+        text-align: right;
+        margin-block-start: 0.8em; }
         .site-header .user-info .logout {
           width: 30%;
           float: right; }

@@ -1,10 +1,20 @@
 {% extends "base.html" %}
 
+{% block body_class %}
+landing
+{% endblock %}
+
 {% block heading %}
-    Create Account
+    Create Your Account
 {% endblock %}
 
 {% block body %}
+    <p class="apology">
+        Now, I know what you're thinking. Why do I need to sign up for a crap site like this?<br>
+        Well, you don't. This feature just gives the site a bit of maturity that many other "Non-log-innable" sites are lacking.<br>
+        The only reason you would NEED to sign up is if you want to add or rate a book in my propritary book rating system.<br>
+        Make an account, don't make an account, I don't really care. Just enjoy.<br>
+    <p/>
     <form action="{{ url_for('signup') }}" method="post">
         <input type="text" name="username" placeholder="Create Your UserName">
         <input type="password" name="password" placeholder="Enter A Password">

@@ -14,7 +14,7 @@
 {% block body %}
     <div class="rating-info">
         {% if ratings_average %}
-            <h3> This book has a <span class="rating rounded-{{ ratings_average|round|int }}">{{ ratings_average }}</span> rating from {{ ratings_count }} reviews</h3>
+            <h3> This book has a <span class="rating rounded-{{ ratings_average|round|int }}">{{ '%0.2f' % ratings_average|float }}</span> rating from {{ ratings_count }} reviews</h3>
         {% else %}
             <h3> This book has not been reviewed yet :(</h3>
         {% endif %}
@@ -36,7 +36,7 @@
                 </form>
             {% endif %}
         {% else %}
-        <p> Log in to rate this book </p>
+        <p class="log-in-notice"> Log in to rate this book </p>
         {% endif %}
     </div>
 

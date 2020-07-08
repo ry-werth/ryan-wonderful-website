@@ -1,7 +1,8 @@
 .book-individ h1 {
   margin-bottom: 5px; }
   .book-individ h3 {
-    margin-top: 5px; }
+    margin-top: 15px;
+    font-size: 22px; }
     .book-individ .rating.rounded-0 {
       color: #9c9c9c; }
       .book-individ .rating.rounded-1 {
@@ -18,7 +19,10 @@
   margin-top: 40px;
   text-align: center;
   margin-bottom: 60px; }
-  .book-individ .rating-info form {
-    margin-top: 30px; }
+  .book-individ .rating-info .log-in-notice {
+    text-align: center;
+    margin-top: 20px; }
+    .book-individ .rating-info form {
+      margin-top: 30px; }
 .book-individ .return-container {
   text-align: center; }

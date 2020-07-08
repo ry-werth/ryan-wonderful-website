@@ -57,7 +57,7 @@ def addRating(book_id):
     db.session.add(new_rating)
     db.session.commit()
 
-    return redirect("/book_reviews/book/{}".format(book_id))
+    return redirect("/book_reviews/{}".format(book_id))
 
 @app.route("/book_reviews/<string:book_id>")
 def bookPage(book_id):

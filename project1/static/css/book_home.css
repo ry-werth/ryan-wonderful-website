@@ -1,6 +1,8 @@
 .book-home table {
   margin: 0 auto;
   width: 50%; }
+  .book-home table a:hover {
+    text-decoration: underline; }
   .book-home table tr th {
     text-align: left; }
     .book-home table tr th.rating, .book-home table tr th.reviews {
@@ -20,10 +22,11 @@
     border-width: 1px;
     border-style: solid; }
     .book-home form button {
-      background-color: #DE4A67;
       padding: 10px;
       border-radius: 5px;
       font-size: 16px; }
       .book-home form button:hover {
-        cursor: pointer;
-        background-color: #c43753; }
+        cursor: pointer; }
+.book-home .log-in-notice {
+  text-align: center;
+  margin-top: 50px; }

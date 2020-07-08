@@ -25,12 +25,15 @@
         width: 70%;
         text-align: right;
     }
+
     .user-info {
         width: 15%;
         .username {
             width: 55%;
             float: left;
             text-align: right;
+            margin-block-start: .8em;
+
         }
         .logout {
             width: 30%;

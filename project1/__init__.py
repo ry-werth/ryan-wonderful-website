@@ -27,7 +27,7 @@ app.config['SECRET_KEY'] = '3d6f45a5fc12445dbac2f59c3b6c7cb1'
 Session(app)
 engine = create_engine(os.getenv("DATABASE_URL"))
 db_session = scoped_session(sessionmaker(bind=engine))
-# app.config["SQLALCHEMY_DATABASE_URI"] = os.environ['DATABASE_URL']
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 bcrypt=Bcrypt(app)
 login_manager = LoginManager(app)
 Scss(app)
